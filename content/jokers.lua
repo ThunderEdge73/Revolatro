@@ -10,7 +10,7 @@ SMODS.Joker {
 		return { vars = { card.ability.extra.Xmult, card.ability.extra.Xmult_gain, card.ability.extra.count, card.ability.extra.needed } }
 	end,
 	calculate = function(self, card, context)
-        if context.before then
+        if context.before and not context.blueprint then
             card.ability.extra.count = card.ability.extra.count + 1
             if card.ability.extra.count >= card.ability.extra.needed then
                 card.ability.extra.count = 0
