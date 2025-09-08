@@ -14,7 +14,11 @@ SMODS.Joker {
             card.ability.extra.count = card.ability.extra.count + 1
             if card.ability.extra.count >= card.ability.extra.needed then
                 card.ability.extra.count = 0
-                card.ability.extra.Xmult = card.ability.extra.Xmult + card.ability.extra.Xmult_gain
+                SMODS.scale_card(card, {
+                    ref_table = card.ability.extra,
+                    ref_value = "Xmult",
+                    scalar_value = "Xmult_gain",
+                })
                 return {
                     message = "X" .. card.ability.extra.Xmult .. " Mult"
                 }
