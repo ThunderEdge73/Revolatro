@@ -1,0 +1,10 @@
+return {
+    descriptions = {
+        Joker = {
+            
+        }
+    },
+    misc = {
+
+    }
+}
