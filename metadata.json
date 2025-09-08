@@ -1,6 +1,7 @@
 {
     "id": "revolatro",
     "name": "Revolatro",
+    "display_name": "Revolatro",
     "author": [
         "ThunderEdge73",
         "Poker The Poker"
@@ -10,6 +11,7 @@
     "main_file": "main.lua",
     "priority": 0,
     "badge_colour": "C7534E",
+    "version": "0.0.1",
     "dependencies": [
         "Steamodded (>=1.0.0~BETA-0827a)"
     ]
