@@ -1,0 +1,16 @@
+{
+    "id": "revolatro",
+    "name": "Revolatro",
+    "author": [
+        "ThunderEdge73",
+        "Poker The Poker"
+    ],
+    "description": "A Balatro mod based on the idle game Revolution Idle.",
+    "prefix": "rev",
+    "main_file": "main.lua",
+    "priority": 0,
+    "badge_colour": "C7534E",
+    "dependencies": [
+        "Steamodded (>=1.0.0~BETA-0827a)"
+    ]
+}
