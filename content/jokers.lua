@@ -13,8 +13,17 @@ SMODS.Joker {
         if context.before and not context.blueprint then
             card.ability.extra.count = card.ability.extra.count + 1
             if card.ability.extra.count >= card.ability.extra.needed then
+<<<<<<< HEAD
                 card.ability.extra.count = card.ability.extra.count - card.ability.extra.needed
                 card.ability.extra.Xmult = card.ability.extra.Xmult + card.ability.extra.Xmult_gain
+=======
+                card.ability.extra.count = 0
+                SMODS.scale_card(card, {
+                    ref_table = card.ability.extra,
+                    ref_value = "Xmult",
+                    scalar_value = "Xmult_gain",
+                })
+>>>>>>> 364e8229025a0dcb6ede933ab78f3e5be2df0dca
                 return {
                     message = "X" .. card.ability.extra.Xmult .. " Mult"
                 }
