@@ -20,9 +20,6 @@ SMODS.Joker {
                     ref_value = "Xmult",
                     scalar_value = "Xmult_gain",
                 })
-                return {
-                    message = "X" .. card.ability.extra.Xmult .. " Mult"
-                }
 			else
 				return {
 					message = card.ability.extra.count .. "/" .. card.ability.extra.needed
