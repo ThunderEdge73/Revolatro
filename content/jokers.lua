@@ -53,10 +53,11 @@ SMODS.Joker {
             card.ability.extra.count = card.ability.extra.count + 1
             if card.ability.extra.count >= card.ability.extra.needed then
                 card.ability.extra.count = card.ability.extra.count - card.ability.extra.needed
-                card.ability.extra.Xmult = card.ability.extra.Xmult + card.ability.extra.Xmult_gain
-                return {
-                    message = "X" .. card.ability.extra.Xmult .. " Mult"
-                }
+				SMODS.scale_card(card, {
+                    ref_table = card.ability.extra,
+                    ref_value = "Xmult",
+                    scalar_value = "Xmult_gain",
+                })
 			else
 				return {
 					message = card.ability.extra.count .. "/" .. card.ability.extra.needed
@@ -88,9 +89,11 @@ SMODS.Joker {
             if card.ability.extra.count >= card.ability.extra.needed then
                 card.ability.extra.count = card.ability.extra.count - card.ability.extra.needed
                 card.ability.extra.Xmult = card.ability.extra.Xmult + card.ability.extra.Xmult_gain
-                return {
-                    message = "X" .. card.ability.extra.Xmult .. " Mult"
-                }
+				SMODS.scale_card(card, {
+                    ref_table = card.ability.extra,
+                    ref_value = "Xmult",
+                    scalar_value = "Xmult_gain",
+				} )
 			else
 				return {
 					message = card.ability.extra.count .. "/" .. card.ability.extra.needed
@@ -121,10 +124,11 @@ SMODS.Joker {
             card.ability.extra.count = card.ability.extra.count + 1
             if card.ability.extra.count >= card.ability.extra.needed then
                 card.ability.extra.count = card.ability.extra.count - card.ability.extra.needed
-                card.ability.extra.Xmult = card.ability.extra.Xmult + card.ability.extra.Xmult_gain
-                return {
-                    message = "X" .. card.ability.extra.Xmult .. " Mult"
-                }
+				SMODS.scale_card(card, {
+                    ref_table = card.ability.extra,
+                    ref_value = "Xmult",
+                    scalar_value = "Xmult_gain",
+                })
 			else
 				return {
 					message = card.ability.extra.count .. "/" .. card.ability.extra.needed
